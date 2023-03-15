@@ -9,6 +9,16 @@
     "lint": "next lint",
     "prepare": "husky install"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "eslint --fix"
+    ]
+  },
   "dependencies": {
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
@@ -23,6 +33,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0"
   }
 }
