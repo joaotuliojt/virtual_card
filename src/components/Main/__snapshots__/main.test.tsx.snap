@@ -6,4 +6,4 @@ exports[`<Main /> should render the heading 1`] = `
     Main Component
   </h1>
 </main>
-`;
+`
